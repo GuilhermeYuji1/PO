@@ -1,24 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         body {
+        body {
             background-color: antiquewhite;
-         }
-         .links {
+            padding: 20px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p {
+            text-indent:30px;
+            text-align: center;
+            font-size: 30px;
+        
+        }
+        .links {
             display: inline;
-         }
+            text-align: center;
+            gap: 30px;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 60px;
+            text-align: center;
+        }
+        .imagens {
+            margin: 10px;
+            border: 5px solid black;
+            display: flex;
+            float: left;
+        }
+        h2 {
+            font-size: 40px;
+            text-align: center;
+        }
+        .link {
+            gap: 30px;
+            text-align: center;
+            color: black;
+        }
+        
     </style>
 </head>
+
 <body>
-    <p>Home</p>
+    <h1>Aviação</h1>
     <nav class="links">
-    <a href="/pag2"> pagina2</a>
-    <a href="/pag3"> pagina3</a>
-    <a href="/pag4"> pagina4</a>
+        <a class="link" href="/pag2"> Noticias</a>
+        <a class="link" href="/pag3"> Como começou</a>
+        <a class="link" href="/pag4"> Saiba Mais</a>
     </nav>
+    <h2>O que é a aviação</h2>
+    <p> Aviação é a atividade científico-tecnológica, econômica e de transportes que tem por objetivo o estudo, o
+        desenvolvimento e a exploração (utilização, com ou sem fins comerciais) dos aeródinos. É comum as pessoas
+        incorretamente associarem "aviação" como sinônimo de aeronáutica, embora na realidade a aviação seja apenas um
+        dos dois ramos da aeronáutica, sendo o outro ramo a aerostação. Isso porque o termo aeronáutica significa
+        "navegação aérea". O termo aviação significa "navegação aérea em veículo mais pesado que o ar" (navegação em
+        aeródinos) Já aerostação significa "navegação aérea em veículo mais leve que o ar" (navegação em aeróstatos).
+    </p>
+    <a class = "imagens" href="/"><img src="{{ url_for('static', filename='imagens/aviao2.jpg') }}" alt="Avião"></a>
 </body>
+
 </html>
